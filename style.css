@@ -1,6 +1,7 @@
 .navigation{
-    display: flex;
+    display: flex;   
     justify-content: space-around;
+    
 }
 .but {
     text-decoration: none;
@@ -9,6 +10,7 @@
     letter-spacing: 2px;
     font-size: 13px;
         transition: 0.5s;
+    
 }
 .but:hover{
     transform: scale(2);

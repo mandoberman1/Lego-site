@@ -6,12 +6,17 @@
     margin: 10px;
 }
 .card{
-    margin: 10px 0;
+    margin: 20px 0;
+    width: 288px !important;
+    height: 454px !important;
     -webkit-box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
     -moz-box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
     box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+    transition: transform 1s ease;
 }
-
+.card:hover{
+    transform: scale(1.05);
+}
 .cards-big{
     display: flex;
     justify-content: center;
@@ -35,7 +40,13 @@
     top: 0;
     background-color: white;
 }
-
+.card-img-top{
+    width: 286px;
+    height: 286px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
 .card-big .card-body{
     padding: 10px;
 }

@@ -20,13 +20,11 @@ const cardmini = document.querySelectorAll('.card')
 
 function search() {
     const inputValue = input.value; // Получаем значение input
-    title.forEach(function(item, index) {
+    title.forEach(function(item, index) {   
         if (inputValue === '' || item.textContent.includes(inputValue) || text[index].textContent.includes(inputValue)) {
-            cardmini[index].style.display = 'block'; // Показываем элемент
-            cardmini[index].style.display = 'block'
+            cardmini[index].style.display = 'flex'; // Показываем элемент
         } else {
             cardmini[index].style.display = 'none'; // Скрываем элемент
-            cardmini[index].style.display = 'none'
         }
     });
 }

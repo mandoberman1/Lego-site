@@ -1,3 +1,58 @@
+.cards-mini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.card{
+    margin: 10px 0;
+    -webkit-box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+    -moz-box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+    box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+}
 
+.cards-big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.card-big{
+    width: 90%;
+    height: 90%;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+    -moz-box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+    box-shadow: 1px 1px 10px 7px rgba(79, 149, 159, 0.2);
+    z-index: 99;
+    margin: 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
 
+.card-big .card-body{
+    padding: 10px;
+}
+.img-big{
+    height: 40%;
+}
+.closeBigCard{
+    border-radius: 15px 15px 0 0 !important;
+}
+@media(max-width: 1171px){
+    .cards-mini{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin: 10px 20px;
+        width: 100%;
+    }
+}
 @import '../parts/main.less';
